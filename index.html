@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditolak</title>
+    <style>
+        /* Gaya dasar */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .text {
+            color: red;
+            font-size: 5rem;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: move 3s infinite alternate ease-in-out;
+        }
+
+        /* Animasi */
+        @keyframes move {
+            0% {
+                transform: translateX(-100px) rotate(-10deg);
+                text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px darkred;
+            }
+            50% {
+                transform: translateX(100px) rotate(10deg);
+                text-shadow: 0 0 10px red, 0 0 20px darkred, 0 0 40px crimson;
+            }
+            100% {
+                transform: translateX(-100px) rotate(-10deg);
+                text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px darkred;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">Ditolak</div>
+</body>
+</html>
